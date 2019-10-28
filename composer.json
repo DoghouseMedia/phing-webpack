@@ -1,0 +1,14 @@
+{
+    "name": "doghouseagency/phing-webpack",
+    "description": "A collection of webpack targets for Phing.",
+    "keywords": [
+        "phing",
+        "wepack"
+    ],
+    "homepage": "https://github.com/DoghouseMedia/phing-webpack",
+    "license": "GPL-2.0+",
+    "support": {
+        "issues": "https://github.com/DoghouseMedia/phing-webpack",
+        "source": "https://github.com/DoghouseMedia/phing-webpack"
+    }
+}

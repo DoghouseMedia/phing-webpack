@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="webpack" default="webpack:compile">
+
+  <!-- ## Properties -->
+
+  <property name="webpack.cmd.install"    value="npm install" />
+  <property name="webpack.cmd.compile"    value="npm run build" />
+  <property name="webpack.cmd.watch"      value="npm run watch" />
+  <property name="webpack.cmd.report"     value="npm run build:report" />
+  <property name="webpack.cmd.styleguide" value="npm run build:styleguide" />
+
+  <property name="webpack.project.dir" value="" />
+
+  <!-- ## Targets -->
+
+  <target name="webpack:config"
+          description="Configures webpack for the project.">
+    <exec command="${webpack.cmd.install}"
+          passthru="true"
+          checkreturn="true" />
+  </target>
+
+  <target name="webpack:compile"
+          description="Compiles CSS and JS via webpack.">
+    <exec command="${webpack.cmd.compile}"
+          passthru="true"
+          checkreturn="true" />
+  </target>
+
+  <target name="webpack:watch"
+          description="Watches SASS and JS files for changes and compiles them through webpack.">
+    <exec command="${webpack.cmd.watch}"
+          passthru="true"
+          checkreturn="true" />
+  </target>
+
+  <target name="webpack:report"
+          description="Generate a webpack compile report.">
+    <exec command="${webpack.cmd.report}"
+          passthru="true"
+          checkreturn="true" />
+  </target>
+
+  <target name="webpack:styleguide"
+          description="Generate a styleguide from SASS files.">
+    <exec command="${webpack.cmd.report}"
+          passthru="true"
+          checkreturn="true" />
+  </target>
+
+</project>
