@@ -44,7 +44,7 @@
 
   <target name="webpack:styleguide"
           description="Generate a styleguide from SASS files.">
-    <exec command="${webpack.cmd.report}"
+    <exec command="${webpack.cmd.styleguide}"
           passthru="true"
           checkreturn="true" />
   </target>
